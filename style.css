@@ -235,3 +235,24 @@ footer p {
         font-size: 28px;
     }
   }
+.brand-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.brand-logo img {
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer .brand-logo img {
+    width: 190px;
+}
+
+@media (max-width: 700px) {
+    .brand-logo img {
+        width: 175px;
+    }
+} 
