@@ -1,0 +1,237 @@
+/* ZAYQORA KITCHEN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f1e7;
+    color: #183d30;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #183d30;
+}
+
+.logo {
+    color: #f6f1e7;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #d7b985;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+.hero {
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background: linear-gradient(
+        90deg,
+        #183d30,
+        #315c45
+    );
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: #b18a52;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #d7b985;
+}
+
+.hero-content > p:not(.eyebrow) {
+    margin-bottom: 30px;
+}
+
+.primary-btn,
+.product-btn {
+    display: inline-block;
+    background: #d7b985;
+    color: #183d30;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.products {
+    padding: 85px 7%;
+    text-align: center;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading h2,
+.about h2,
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #e5dfd1;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info h3 {
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #777;
+    margin-bottom: 18px;
+}
+
+.about {
+    padding: 85px 10%;
+    background: #e9e1d1;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 650px;
+    margin: auto;
+}
+
+.contact {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 35px 15px;
+    background: #183d30;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 17px 5%;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #183d30;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 60px 7%;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products {
+        padding: 65px 6%;
+    }
+
+    .section-heading h2,
+    .about h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+  }
