@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 430 110">
+
+  <g fill="none"
+     stroke="#D7B985"
+     stroke-width="5"
+     stroke-linecap="round">
+
+    <path d="M25 57
+    C7 49 14 24 34 27
+    C35 5 68 5 72 27
+    C94 18 107 45 88 57
+    L88 76 L26 76 Z"/>
+
+    <path d="M42 77 L42 88 L73 88 L73 77"/>
+  </g>
+
+  <text x="115" y="57"
+        font-family="Georgia,serif"
+        font-size="43"
+        font-weight="bold"
+        fill="#F6F1E7">ZAYQORA</text>
+
+  <text x="260" y="88"
+        font-family="Georgia,serif"
+        font-size="27"
+        font-style="italic"
+        fill="#D7B985">Kitchen</text>
+</svg> 
