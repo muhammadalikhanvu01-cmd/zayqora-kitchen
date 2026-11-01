@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,31 +15,71 @@
       <a href="#home" class="brand-logo">
         <img src="logo.svg" alt="ZAYQORA Kitchen">
       </a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
-        <li><a href="#products">Our Products</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <a href="https://wa.me/923127433874" class="nav-order" target="_blank">
+        Order on WhatsApp
+      </a>
     </nav>
   </header>
 
   <main>
+
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
       <div class="hero-content">
-        <p class="eyebrow">WELCOME TO ZAYQORA KITCHEN</p>
+        <p class="eyebrow">HOMEMADE • FRESH • DELICIOUS</p>
         <h1>Taste That Brings <span>Everyone Together.</span></h1>
-        <p>Delicious frozen food, prepared for memorable family moments.</p>
-        <a href="#products" class="primary-btn">Explore Our Products</a>
+        <p>Discover delicious frozen food, prepared with care for your family's special moments.</p>
+        <a href="#products" class="primary-btn">Explore Our Menu →</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="chicken-roll.jpg" alt="Freshly prepared ZAYQORA Chicken Rolls">
       </div>
     </section>
 
+    <!-- QUALITY STRIP -->
+    <section class="quality-strip">
+      <div class="quality-item">
+        <span class="quality-icon">✦</span>
+        <div>
+          <h3>Freshly Prepared</h3>
+          <p>Made with care</p>
+        </div>
+      </div>
+
+      <div class="quality-item">
+        <span class="quality-icon">✓</span>
+        <div>
+          <h3>Quality Ingredients</h3>
+          <p>Quality in every bite</p>
+        </div>
+      </div>
+
+      <div class="quality-item">
+        <span class="quality-icon">♡</span>
+        <div>
+          <h3>Family Favourite</h3>
+          <p>Made for sharing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
     <section class="products" id="products">
       <div class="section-heading">
         <p class="eyebrow">OUR COLLECTION</p>
         <h2>Made for Your Table</h2>
-        <p>Select your favourite product to view prices and place an order.</p>
+        <p>Discover your favourites and order fresh frozen food for your home.</p>
       </div>
 
       <div class="product-grid">
@@ -109,34 +150,58 @@
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="about" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">ABOUT US</p>
-        <h2>Quality You Can Taste</h2>
+      <div class="about-content">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Good Food. Good Mood.</h2>
         <p>
-          At ZAYQORA Kitchen, we bring delicious frozen food
-          to your home with taste, care and convenience.
+          At ZAYQORA Kitchen, we believe that good food brings people together.
+          Our frozen food collection combines traditional flavours, quality
+          ingredients and convenience to make family moments more delicious.
         </p>
+        <a href="#products" class="primary-btn">Discover Our Products</a>
+      </div>
+
+      <div class="about-decoration">
+        <span>✦</span>
+        <h3>ZAYQORA</h3>
+        <p>Made for Your Table</p>
+        <span>✦</span>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact" id="contact">
       <div class="section-heading">
         <p class="eyebrow">GET IN TOUCH</p>
         <h2>Ready to Order?</h2>
-        <p>Select your products and send your order directly through WhatsApp.</p>
+        <p>Choose your favourite products and place your order directly through WhatsApp.</p>
         <a href="https://wa.me/923127433874" id="whatsappBtn" class="primary-btn">
           Contact Us on WhatsApp
         </a>
       </div>
     </section>
+
   </main>
 
-  <footer>
-    <p>© 2026 ZAYQORA Kitchen. All Rights Reserved.</p>
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="logo.svg" alt="ZAYQORA Kitchen">
+      <p>Good Food. Good Mood.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">© 2026 ZAYQORA Kitchen. All Rights Reserved.</p>
   </footer>
 
-  <!-- Order Modal -->
+  <!-- ORDER MODAL: KEEP IDs FOR SCRIPT.JS -->
   <div class="order-modal" id="orderModal" aria-hidden="true">
     <div class="order-modal-content">
       <button type="button" class="modal-close" id="closeModal">×</button>
@@ -179,4 +244,4 @@
 
   <script src="script.js"></script>
 </body>
-</html> 
+</html>
