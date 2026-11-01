@@ -400,8 +400,6 @@ footer .brand-logo img {
   }
 } 
 
-/* ===== ZAYQORA PREMIUM HERO REDESIGN ===== */
-
 .hero {
     min-height: 620px;
     display: flex;
@@ -511,3 +509,76 @@ footer .brand-logo img {
     background: red !important;
     min-height: 620px !important;
 } 
+/* ZAYQORA PREMIUM HERO */
+
+.hero {
+    background:
+        radial-gradient(ellipse at center, rgba(215,185,133,0.18), transparent 60%),
+        linear-gradient(135deg, #102b22, #183d30 55%, #0d241c) !important;
+    min-height: 620px !important;
+    padding: 100px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.hero-content {
+    max-width: 780px !important;
+    margin: auto !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.hero h1 {
+    color: #fffaf0 !important;
+    font-family: Georgia, serif !important;
+    font-size: clamp(38px, 6vw, 68px) !important;
+    line-height: 1.12 !important;
+    margin-bottom: 24px !important;
+}
+
+.hero p {
+    color: #e1dfd5 !important;
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    max-width: 600px !important;
+    margin: 0 auto 32px !important;
+}
+
+.hero .eyebrow {
+    color: #d7b985 !important;
+    letter-spacing: 4px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 22px !important;
+}
+
+.hero .primary-btn {
+    background: #d7b985 !important;
+    color: #183d30 !important;
+    padding: 15px 34px !important;
+    border-radius: 4px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+.hero .primary-btn:hover {
+    background: #f0d6a5 !important;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 520px !important;
+        padding: 75px 22px !important;
+    }
+
+    .hero h1 {
+        font-size: 42px !important;
+    }
+
+    .hero p {
+        font-size: 15px !important;
+    }
+}
