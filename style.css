@@ -507,3 +507,7 @@ footer .brand-logo img {
         padding: 14px 27px;
     }
 }
+.hero {
+    background: red !important;
+    min-height: 620px !important;
+} 
