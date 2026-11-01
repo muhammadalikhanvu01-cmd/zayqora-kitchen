@@ -582,3 +582,469 @@ footer .brand-logo img {
         font-size: 15px !important;
     }
 }
+
+/* ===== ZAYQORA COMPLETE PREMIUM DESIGN ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f6f1e7;
+    color: #183d30;
+}
+
+/* HEADER */
+header {
+    background: #082417 !important;
+    border-bottom: 1px solid #b8954f;
+}
+
+.navbar {
+    min-height: 85px;
+    padding: 12px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand-logo img {
+    width: 190px;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff8e9 !important;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d7b985 !important;
+}
+
+.nav-order {
+    background: #1b7136;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* HERO */
+.hero {
+    min-height: 480px !important;
+    padding: 65px 5% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    text-align: left !important;
+    background: linear-gradient(120deg, #082417, #183d30) !important;
+}
+
+.hero-content {
+    max-width: 620px !important;
+    margin: 0 !important;
+}
+
+.hero .eyebrow,
+.section-heading .eyebrow,
+.about .eyebrow {
+    color: #d7b985 !important;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-family: Georgia, serif !important;
+    color: #fff8e9 !important;
+    font-size: clamp(36px, 5vw, 60px) !important;
+    line-height: 1.12 !important;
+    margin: 18px 0 !important;
+}
+
+.hero h1 span {
+    color: #e6c47e;
+    display: block;
+}
+
+.hero p {
+    color: #eee7d8 !important;
+    line-height: 1.8;
+    font-size: 17px;
+    margin: 0 0 28px !important;
+}
+
+.hero .primary-btn,
+.contact .primary-btn,
+.about .primary-btn {
+    display: inline-block;
+    background: #d7b985 !important;
+    color: #102c20 !important;
+    padding: 15px 28px !important;
+    border-radius: 30px !important;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+}
+
+.hero-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* QUALITY STRIP */
+.quality-strip {
+    background: #082417;
+    color: #fff8e9;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 22px 5%;
+    gap: 20px;
+    border-top: 1px solid #d7b985;
+    border-bottom: 1px solid #d7b985;
+}
+
+.quality-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.quality-icon {
+    color: #e5c174;
+    font-size: 34px;
+}
+
+.quality-item h3 {
+    font-family: Georgia, serif;
+    margin: 0 0 5px;
+}
+
+.quality-item p {
+    color: #e3d5b7;
+    margin: 0;
+    font-size: 13px;
+}
+
+/* PRODUCT SECTION */
+.products {
+    background: #f6f1e7 !important;
+    padding: 65px 4% !important;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2,
+.about h2,
+.contact h2 {
+    color: #183d30;
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 43px);
+    margin: 10px 0;
+}
+
+.section-heading > p:last-child {
+    color: #6b7168;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.product-card {
+    background: #fffaf0 !important;
+    border: 1px solid #e4d5b7;
+    border-radius: 13px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(35,50,30,0.09);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(35,50,30,0.15);
+}
+
+.product-card > img {
+    width: 100%;
+    height: 190px;
+    display: block;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 18px 14px !important;
+    text-align: center;
+}
+
+.product-info h3 {
+    color: #183d30;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.product-info p {
+    color: #77766e;
+    font-size: 13px;
+    min-height: 38px;
+    line-height: 1.5;
+}
+
+.product-btn {
+    background: #183d30 !important;
+    color: white !important;
+    border: none;
+    border-radius: 25px !important;
+    padding: 12px 17px !important;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-btn:hover {
+    background: #d0a95f !important;
+    color: #102c20 !important;
+}
+
+/* ABOUT SECTION */
+.about {
+    background: #102d21 !important;
+    color: #fff8e9;
+    padding: 65px 7% !important;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.about h2 {
+    color: #e5c174;
+}
+
+.about-content > p:not(.eyebrow) {
+    color: #e5e0d4;
+    line-height: 1.9;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+.about-decoration {
+    text-align: center;
+    border-left: 1px solid #d7b985;
+    padding: 25px;
+}
+
+.about-decoration span {
+    color: #d7b985;
+    font-size: 35px;
+}
+
+.about-decoration h3 {
+    color: #e5c174;
+    font-family: Georgia, serif;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin: 12px 0;
+}
+
+.about-decoration p {
+    color: #fff8e9;
+    font-style: italic;
+}
+
+/* CONTACT */
+.contact {
+    background: #f6f1e7 !important;
+    padding: 65px 20px !important;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #082417;
+    color: #fff8e9;
+    padding: 35px 5% 20px;
+    text-align: center;
+    border-top: 3px solid #d7b985;
+}
+
+.footer-brand img {
+    width: 175px;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.footer-brand p {
+    color: #d7b985;
+    font-style: italic;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #fff8e9;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #d7b985;
+}
+
+.copyright {
+    color: #bcb9ad;
+    font-size: 13px;
+    border-top: 1px solid rgba(215,185,133,0.25);
+    padding-top: 18px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 850px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center !important;
+        padding: 55px 6% !important;
+    }
+
+    .hero-content {
+        margin: auto !important;
+    }
+
+    .hero-image {
+        height: 270px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-decoration {
+        border-left: none;
+        border-top: 1px solid #d7b985;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 12px 4%;
+    }
+
+    .brand-logo img {
+        width: 145px;
+    }
+
+    .nav-order {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: auto !important;
+        padding: 55px 20px !important;
+    }
+
+    .hero h1 {
+        font-size: 39px !important;
+    }
+
+    .hero p {
+        font-size: 15px !important;
+    }
+
+    .hero-image {
+        height: 220px;
+    }
+
+    .quality-strip {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 25px 15px;
+    }
+
+    .quality-item {
+        justify-content: flex-start;
+        max-width: 230px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .products {
+        padding: 45px 14px !important;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-card > img {
+        height: 135px;
+    }
+
+    .product-info {
+        padding: 12px 8px !important;
+    }
+
+    .product-info h3 {
+        font-size: 16px;
+    }
+
+    .product-info p {
+        font-size: 12px;
+    }
+
+    .product-btn {
+        font-size: 11px;
+        padding: 10px 8px !important;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+}
