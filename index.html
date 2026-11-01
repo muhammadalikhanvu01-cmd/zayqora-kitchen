@@ -1,155 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ZAYQORA Kitchen | Premium Frozen Foods</title>
-
-    <meta name="description" content="Discover delicious frozen Shami Kabab, Koftay and Seekh Kabab from ZAYQORA Kitchen.">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAYQORA Kitchen | Premium Frozen Foods</title>
+  <meta name="description" content="Delicious frozen food by ZAYQORA Kitchen. Order Shami Kabab, Koftay, Rolls and Samosas.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <a href="#home" class="brand-logo">
-    <img src="logo.svg" alt="ZAYQORA Kitchen">
-            </a> 
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="brand-logo">
+        <img src="logo.svg" alt="ZAYQORA Kitchen">
+      </a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <button class="menu-btn" id="menuBtn">
-                ☰
-            </button>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO ZAYQORA KITCHEN</p>
+        <h1>Taste That Brings <span>Everyone Together.</span></h1>
+        <p>Delicious frozen food, prepared for memorable family moments.</p>
+        <a href="#products" class="primary-btn">Explore Our Products</a>
+      </div>
+    </section>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Our Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="products" id="products">
+      <div class="section-heading">
+        <p class="eyebrow">OUR COLLECTION</p>
+        <h2>Made for Your Table</h2>
+        <p>Select your favourite product to view prices and place an order.</p>
+      </div>
 
-    <!-- Hero Section -->
-    <main>
+      <div class="product-grid">
 
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">WELCOME TO ZAYQORA KITCHEN</p>
+        <article class="product-card">
+          <img src="shami-kabab.jpg" alt="Shami Kabab" loading="lazy">
+          <div class="product-info">
+            <h3>Shami Kabab</h3>
+            <p>A classic desi favourite for every meal.</p>
+            <button class="product-btn" data-product="shami">View Prices & Order</button>
+          </div>
+        </article>
 
-                <h1>
-                    Taste That Brings
-                    <span>Everyone Together.</span>
-                </h1>
+        <article class="product-card">
+          <img src="koftay.jpg" alt="Premium Koftay" loading="lazy">
+          <div class="product-info">
+            <h3>Premium Koftay</h3>
+            <p>Traditional taste made for family dining.</p>
+            <button class="product-btn" data-product="koftay">View Prices & Order</button>
+          </div>
+        </article>
 
-                <p>
-                    Discover delicious frozen food made for
-                    memorable family moments.
-                </p>
+        <article class="product-card">
+          <img src="seekh-kabab.jpg" alt="Seekh Kabab" loading="lazy">
+          <div class="product-info">
+            <h3>Seekh Kabab</h3>
+            <p>A delicious choice for special occasions.</p>
+            <button class="product-btn" data-product="seekh">View Prices & Order</button>
+          </div>
+        </article>
 
-                <a href="#products" class="primary-btn">
-                    Explore Our Products
-                </a>
-            </div>
-        </section>
+        <article class="product-card">
+          <img src="chicken-roll.jpg" alt="Chicken Roll" loading="lazy">
+          <div class="product-info">
+            <h3>Chicken Roll</h3>
+            <p>A tasty snack for every occasion.</p>
+            <button class="product-btn" data-product="chicken-roll">View Prices & Order</button>
+          </div>
+        </article>
 
-        <!-- Products -->
-        <section class="products" id="products">
+        <article class="product-card">
+          <img src="chicken-samosa.jpg" alt="Chicken Samosa" loading="lazy">
+          <div class="product-info">
+            <h3>Chicken Samosa</h3>
+            <p>Crispy, flavourful and ready for your table.</p>
+            <button class="product-btn" data-product="chicken-samosa">View Prices & Order</button>
+          </div>
+        </article>
 
-            <div class="section-heading">
-                <p class="eyebrow">OUR COLLECTION</p>
-                <h2>Made for Your Table</h2>
-                <p>Discover our signature frozen food range.</p>
-            </div>
+        <article class="product-card">
+          <img src="vegetable-roll.jpg" alt="Vegetable Roll" loading="lazy">
+          <div class="product-info">
+            <h3>Vegetable Roll</h3>
+            <p>A delicious vegetable-filled snack.</p>
+            <button class="product-btn" data-product="vegetable-roll">View Prices & Order</button>
+          </div>
+        </article>
 
-            <div class="product-grid">
+        <article class="product-card">
+          <img src="vegetable-samosa.jpg" alt="Vegetable Samosa" loading="lazy">
+          <div class="product-info">
+            <h3>Vegetable Samosa</h3>
+            <p>A classic snack for tea time and gatherings.</p>
+            <button class="product-btn" data-product="vegetable-samosa">View Prices & Order</button>
+          </div>
+        </article>
 
-                <article class="product-card">
-                    <img src="shami-kabab.jpg"
-                         alt="Shami Kabab"
-                         loading="lazy">
+      </div>
+    </section>
 
-                    <div class="product-info">
-                        <h3>Shami Kabab</h3>
-                        <p>A classic desi favourite for every meal.</p>
-                        <a href="#contact" class="product-btn">
-                            Order Inquiry
-                        </a>
-                    </div>
-                </article>
+    <section class="about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">ABOUT US</p>
+        <h2>Quality You Can Taste</h2>
+        <p>
+          At ZAYQORA Kitchen, we bring delicious frozen food
+          to your home with taste, care and convenience.
+        </p>
+      </div>
+    </section>
 
-                <article class="product-card">
-                    <img src="koftay.jpg"
-                         alt="Koftay"
-                         loading="lazy">
+    <section class="contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Ready to Order?</h2>
+        <p>Select your products and send your order directly through WhatsApp.</p>
+        <a href="https://wa.me/923127433874" id="whatsappBtn" class="primary-btn">
+          Contact Us on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
 
-                    <div class="product-info">
-                        <h3>Premium Koftay</h3>
-                        <p>Traditional taste made for family dining.</p>
-                        <a href="#contact" class="product-btn">
-                            Order Inquiry
-                        </a>
-                    </div>
-                </article>
+  <footer>
+    <p>© 2026 ZAYQORA Kitchen. All Rights Reserved.</p>
+  </footer>
 
-                <article class="product-card">
-                    <img src="seekh-kabab.jpg"
-                         alt="Seekh Kabab"
-                         loading="lazy">
+  <!-- Order Modal -->
+  <div class="order-modal" id="orderModal" aria-hidden="true">
+    <div class="order-modal-content">
+      <button type="button" class="modal-close" id="closeModal">×</button>
 
-                    <div class="product-info">
-                        <h3>Seekh Kabab</h3>
-                        <p>A delicious choice for special occasions.</p>
-                        <a href="#contact" class="product-btn">
-                            Order Inquiry
-                        </a>
-                    </div>
-                </article>
+      <p class="eyebrow">ZAYQORA KITCHEN</p>
+      <h2>Place Your Order</h2>
 
-            </div>
-        </section>
+      <div id="selectedProductArea"></div>
 
-        <!-- About -->
-        <section class="about" id="about">
-            <div class="about-content">
-                <p class="eyebrow">OUR STORY</p>
-                <h2>Bringing Desi Taste to Your Home</h2>
+      <button type="button" id="addAnotherProduct" class="product-btn">
+        + Add Another Product
+      </button>
 
-                <p>
-                    ZAYQORA Kitchen celebrates traditional food
-                    with convenience in mind. Our goal is to make
-                    every family meal special.
-                </p>
-            </div>
-        </section>
+      <div id="cartItems"></div>
 
-        <!-- Contact -->
-        <section class="contact" id="contact">
-            <p class="eyebrow">GET IN TOUCH</p>
-            <h2>Craving Something Delicious?</h2>
+      <h3>Total: Rs. <span id="orderTotal">0</span></h3>
 
-            <p>Contact us for product details and order inquiries.</p>
+      <form id="orderForm">
+        <h3>Delivery Details</h3>
 
-            <a href="#" id="whatsappBtn" class="primary-btn">
-                Order on WhatsApp
-            </a>
-        </section>
+        <label for="customerName">Your Name</label>
+        <input type="text" id="customerName" required placeholder="Enter your full name">
 
-    </main>
+        <label for="customerPhone">Mobile Number</label>
+        <input type="tel" id="customerPhone" required placeholder="03XXXXXXXXX">
 
-    <!-- Footer -->
-    <footer>
-        <a href="#home" class="logo">ZAYQORA Kitchen</a>
+        <label for="customerAddress">Complete Delivery Address</label>
+        <textarea id="customerAddress" required placeholder="House number, street, area, city"></textarea>
 
-        <p>© 2026 ZAYQORA Kitchen. All rights reserved.</p>
+        <button type="submit" class="primary-btn">
+          Send Order on WhatsApp
+        </button>
+      </form>
 
-        <p>Made with taste and care.</p>
-    </footer>
+      <p class="order-note">
+        Your order details will open in WhatsApp. Please press Send there to confirm your order.
+      </p>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
-</html>
+</html> 
